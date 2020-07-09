@@ -85,7 +85,7 @@ class Field {
 
   bool get sortedOut {
     bool underminedAndMarked = undermined && marked;
-    bool safeAndOpen = !undermined && marked;
+    bool safeAndOpen = !undermined && open;
     return underminedAndMarked || safeAndOpen;
   }
 
